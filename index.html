@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mission 4 Dali</title>
+    <link rel="stylesheet" href="./src/style/app.css">
+  </head>
+  <body>
+  <div id="app">
+    <section id="users-tab"></section>
+    <div id="todo-app">
+      <header>
+        <h1>Let's Go To Do 🌒</h1>
+      </header>
+      <div id="spinner"></div>
+      <section class="todo-app-body">
+        <form id="todo-form">
+          <input
+                  autocomplete="off"
+                  type="text"
+                  id="todo-input"
+                  name="todo-input"
+                  placeholder="할 일을 입력해볼까?"
+          />
+          <button type="submit" id="add-todo-button">
+            Add
+          </button>
+        </form>
+        <div id="todo-list"></div>
+      </section>
+    </div>
+  </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

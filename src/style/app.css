@@ -1,0 +1,180 @@
+/*common*/
+body {
+    margin: 0;
+}
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+li  {
+    list-style: none;
+}
+
+/*end*/
+
+
+
+/*utils*/
+.hide {
+    display: none;
+}
+/* */
+#app {
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#users-tab {
+    width: 300px;
+}
+.users-tab-cells {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.users-cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#todo-app {
+    max-width: 560px;
+}
+/*todoApp*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#todo-form {
+    display: flex;
+}
+
+#todo-input {
+
+    width: 480px;
+    height: 36px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#add-todo-button {
+    color: #fff;
+    background-color: #4fc08d;
+    border-bottom: 2px solid #3aa373;
+    padding: 8px 16px;
+    border-radius: 0 4px 4px 0;
+    height: 36px;
+    width: 80px;
+}
+
+#todo-list {
+    margin-top: 25px;
+}
+#todo-list li{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 504px;
+    height: 36px;
+    background: #eee;
+    border-right: 4px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+#todo-list button {
+    color: #fff;
+    background-color: #f03e3e;
+    border-bottom: 2px solid #e03131;
+    padding: 8px 16px;
+    border-radius: 0 4px 4px 0;
+    width: 80px;
+    height: 36px;
+}
+#todo-list button:hover {
+    color: #fefefe;
+    background-color: #c92a2a;
+}
+/**/
+
+
+/*spinner*/
+
+#spinner .spinner-child {
+    -webkit-animation: v-beatStretchDelay 0.7s infinite linear;
+    animation: v-beatStretchDelay 0.7s infinite linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block;
+}
+#spinner .spinner-child
+{
+    animation-delay: 0s;
+}
+#spinner .spinner-child:nth-child(2)
+{
+    animation-delay: 0.35s;
+}
+
+
+.spinner-child {
+    margin: 2px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.2, 0.68, 0.18, 1.08);
+    animation-name: v-pulseStretchDelay;
+    background-color: rgb(58, 185, 130);
+}
+
+@-webkit-keyframes v-beatStretchDelay {
+    50%
+    {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+        -webkit-opacity: 0.2;
+        opacity: 0.2;
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
+@keyframes v-beatStretchDelay {
+    50%
+    {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+        -webkit-opacity: 0.2;
+        opacity: 0.2;
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
